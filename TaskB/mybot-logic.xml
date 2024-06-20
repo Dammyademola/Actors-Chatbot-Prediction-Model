@@ -1,0 +1,102 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<!-- Greetings and Politeness -->
+<category> <pattern> HELLO </pattern>
+  <template>Hello! How are you?</template> </category>
+
+<category> <pattern> HELLO * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HI * </pattern>
+  <template><srai>HELLO</srai></template> </category>
+
+<category> <pattern> HOW ARE YOU </pattern>
+  <template>I'm functioning within normal parameters, thanks for asking.</template></category>
+
+<category><pattern> I AM FINE </pattern>
+  <template>That's good to know. What would you like to discuss about?</template></category>
+
+<category><pattern> BYE </pattern>
+  <template>#0$Bye! Nice talking to you. You take care now.</template></category>
+
+<category><pattern> GOODBYE </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category><pattern> EXIT </pattern>
+  <template><srai>BYE</srai></template></category>
+
+<category> <pattern> THANKS </pattern>
+  <template>You are welcome.</template></category>
+
+<category> <pattern> THANK YOU </pattern>
+  <template><srai>THANKS</srai></template></category>
+
+<category> <pattern> CHEERS </pattern>
+  <template>Sure mate.</template></category>
+
+<category> <pattern> CHEERS * </pattern>
+  <template>Sure mate.</template></category>
+
+<!-- Topic input -->
+<category>
+  <pattern>WHAT IS THE SIGNIFICANCE OF MOVIE TRAILERS</pattern>
+  <template><srai>Movie trailers provide a sneak peek into upcoming films.</srai></template>
+</category>
+
+<category>
+  <pattern>WHAT IS A SCREENPLAY</pattern>
+  <template><srai>A screenplay is a written script that serves as the blueprint for a movie.</srai></template>
+</category>
+
+<category>
+  <pattern>WHAT ROLE DOES MUSIC PLAY IN MOVIES</pattern>
+  <template><srai>Music sets the mood, enhances emotions, and underscores key moments in movies.</srai></template>
+</category>
+
+<category>
+  <pattern>WHAT IS THE PURPOSE OF FILM RATINGS</pattern>
+  <template><srai>Film ratings provide guidance about the content of a movie, helping viewers determine if it's suitable for their age group or personal preferences.</srai></template>
+</category>
+
+<category>
+  <pattern>CAN YOU NAME A FEW FAMOUS FILM DIRECTORS</pattern>
+  <template><srai>Sure! Some famous film directors include Steven Spielberg, Christopher Nolan, Quentin Tarantino, Martin Scorsese, and Alfred Hitchcock.</srai></template>
+</category>
+
+<category>
+  <pattern>WHY ARE MOVIES SHOWN IN COLOR OR BLACK AND WHITE</pattern>
+  <template><srai>Movies are shown in color or black and white to create different visual effects and evoke different moods.</srai></template>
+</category>
+
+<category>
+  <pattern>WHAT IS A SEQUEL</pattern>
+  <template><srai>A sequel is a movie that continues the story of a previous film, featuring the same characters or themes.</srai></template>
+</category>
+
+<category>
+  <pattern>WHAT IS A MOVIE POSTER</pattern>
+  <template><srai>A movie poster is a printed advertisement for a film that typically features artwork, images of the main characters, and information about the movie's title, release date, cast, and crew.</srai></template>
+</category>
+
+<category>
+  <pattern>WHY DO PEOPLE GO TO THE MOVIES</pattern>
+  <template><srai>People go to the movies to be entertained, to escape reality for a while, and to experience stories and emotions on the big screen.</srai></template>
+</category>
+
+<category>
+  <pattern>WHAT IS A MOVIE</pattern>
+  <template><srai>A movie is a story told through moving pictures and sound. It's like a big colorful storybook that you can watch on a screen.</srai></template>
+</category>
+
+
+<!-- Logic input -->
+<category><pattern> I KNOW THAT * IS *</pattern>
+  <template>#31$<star index="1"/> is <star index="2"/></template></category>  
+
+<category><pattern> CHECK THAT * IS *</pattern>
+  <template>#32$<star index="1"/> is <star index="2"/></template></category>  
+
+</aiml>
